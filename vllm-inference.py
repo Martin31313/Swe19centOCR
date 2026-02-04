@@ -9,7 +9,7 @@
 # containing txt-files with the corresponding base names, each containing the
 # OCR prediction of the image.
 
-#It doesn't run properly with torch 2.9.0
+# It doesn't run properly with torch 2.9.0
 !pip uninstall -y torch torchvision torchaudio
 !pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu126
 
