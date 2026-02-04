@@ -1,7 +1,7 @@
 # This is code for running inference with our models using the vLLM inference
 # engine. It takes a few minutes to start, but once it gets going, the inference
 # is really fast. If you are planning to run inference on less than 100 images,
-# we reccommend using the basic Hugging Face Transformers code available on the
+# we recommend using the basic Hugging Face Transformers code available on the
 # model card of the Hugging Face repo (huggingface.co/J0hanski/Swe19centOCR-8B)
 # instead.
 
