@@ -1,4 +1,4 @@
-# Code we used to fine-tune Qwen3-VL and Qwen2.5-VL models one epoch at a time.
+# Code for fine-tuning Qwen3-VL and Qwen2.5-VL models one epoch at a time.
 
 
 # It doesn't run properly with torch 2.9.0
