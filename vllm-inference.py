@@ -72,7 +72,7 @@ def main(args):
 
     outputs = llm.generate(inputs, sampling_params=sampling_params)
 
-    out_zip_path = os.path.join(args.out_dir, args.out_zip_name)
+    out_zip_path = os.path.join(args.out_dir, args.out_zip_name+".zip")
     with zipfile.ZipFile(out_zip_path, "w", compression=zipfile.ZIP_DEFLATED) as zipf:
         for img_path, o in zip(image_paths, outputs):
             generated_text = o.outputs[0].text
@@ -99,7 +99,7 @@ if __name__ == "__main__":
         max_out_tokens=1280,
         input_zip_path="", # Path to a zip-file containing pngs
         out_dir="", # Path to directory where the output is to be saved
-        out_zip_name="", # Don't forget ".zip" at the end
+        out_zip_name="", # No file extension (.zip)
         prompt="Transcribe the text exactly as it appears in the image. "
               +"Do not write anything but the actual transcription!"
         # The models were fine-tuned using this exact prompt.
