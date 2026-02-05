@@ -97,7 +97,7 @@ if __name__ == "__main__":
         model_dir="J0hanski/Swe19centOCR-8B", # or J0hanski/Swe19centOCR-2B
         max_model_len=4096,
         max_out_tokens=1280,
-        input_zip_path="", # Path to a zip-file containing pngs
+        input_zip="", # Path to a zip-file containing pngs
         out_dir="", # Path to directory where the output is to be saved
         out_zip_name="", # No file extension (.zip)
         prompt="Transcribe the text exactly as it appears in the image. "
