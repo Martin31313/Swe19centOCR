@@ -19,7 +19,6 @@
 !pip install vllm==0.11.1 -q
 
 import os
-import random
 import json
 import time
 import zipfile
