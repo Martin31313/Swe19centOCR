@@ -1,4 +1,8 @@
-def repetition_trimmer(text, max_pattern_length, threshold_chars):
+# This is the repetition trimmer used in our project. We found that
+# max_pattern_length=300 and threshold_chars=300 were good parameter
+# values for a multitude of models on our validation set.
+
+def repetition_trimmer(text, max_pattern_length=300, threshold_chars=300):
     if not text:
         return text, None, None
     
