@@ -1,4 +1,4 @@
-# This is the repetition trimmer used in our project. We found that
+# This is the repetition trimmer used in our thesis. We found that
 # max_pattern_length=300 and threshold_chars=300 were good parameter
 # values for a multitude of models on our validation set.
 
